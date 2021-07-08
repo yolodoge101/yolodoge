@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "GemunuLibre-ExtraBold";
+    src: url("fonts/GemunuLibre-ExtraBold.woff2") format("woff2"),
+    url("fonts/GemunuLibre-ExtraBold.woff") format("woff"),
+    url("fonts/GemunuLibre-ExtraBold.ttf") format("truetype"),
+    url("fonts/GemunuLibre-ExtraBold.eot") format("embedded-opentype"),
+    url("fonts/GemunuLibre-ExtraBold.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aldrich";
+    src: url("fonts/Aldrich.woff2") format("woff2"),
+    url("fonts/Aldrich.woff") format("woff"),
+    url("fonts/Aldrich.ttf") format("truetype"),
+    url("fonts/Aldrich.eot") format("embedded-opentype"),
+    url("fonts/Aldrich.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
