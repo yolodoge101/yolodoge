@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -11,9 +10,21 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link href="css/font.css" rel="stylesheet" type="text/css"/>
     <link href="css/common.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="js/swiper/swiper.min.css" />
+    <link rel="stylesheet" href="js/swiper/swiper.min.css"/>
+    <style type="text/css">
+        video {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 
-   
 </head>
 <body>
 
@@ -23,219 +34,235 @@
         <nav>
             <ul>
                 <li class="toplink"><a href="#Tokenomics">Tokenomics</a></li>
-				<li class="toplink"><a href="#About">About</a></li>
-				<li><a href="https://www.dextools.io/app/pancakeswap/pair-explorer/">Chart</a></li>
+                <li class="toplink"><a href="#About">About</a></li>
+                <li><a href="https://www.dextools.io/app/pancakeswap/pair-explorer/0xf86B9D7d2608D0B738B761F3f00541869B5D0A82">Chart</a></li>
                 <li><a href="file/whitepaper.pdf" target="_blank">Whitepaper</a></li>
-				<li><a href="file/audit.pdf" target="_blank">Audit</a></li>
+                <li><a href="file/audit.pdf" target="_blank">Audit</a></li>
             </ul>
         </nav>
-        <div class="buy"><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=">Buy Now</a></div>
+        <div class="buy"><a href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xf86B9D7d2608D0B738B761F3f00541869B5D0A82">Buy Now</a></div>
         <i class="icon-menu" id="leftMenu"></i>
     </div>
 </header>
 
-<div class="banner section-second" id="YoloDogeCoin">
+<div class="banner">
+    <video muted src="media/video.mp4" loop="loop" autoplay="autoplay" id="shakeVideo" webkit-playsinline="true"
+           playsinline="true"></video>
     <div class="inner">
         <div class="text">
             <h2 data-scroll-reveal="enter top over 0.8s and move 100px after 0s">
                 You Only Live Once<br/>
-        <div class="media" data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.6s">
-            <ul>
-                <li><a href="https://twitter.com/yolodoge_coin/" target="_blank"><img src="images/common/icon_tw.png" alt=""></a> <a href="https://t.me/YoloDogeCoin" target="_blank"><img src="images/common/icon_tg.png" alt=""></a> <a href="https://www.reddit.com/u/YoloDoge_Coin/" target="_blank"><img src="images/common/icon_reddit.png" alt=""></a> <a href="https://0.plus/YoloDogeCoin" target="_blank"><img src="images/common/icon_btok.png" alt=""></a></li> 
-    </div>
-			
-            </ul>
+                <div class="media" data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.6s">
+                    <ul>
+                        <li><a href="https://twitter.com/yolodoge_coin/" target="_blank"><img
+                                src="images/common/icon_tw.png" alt=""></a> <a href="https://t.me/YoloDogeCoin"
+                                                                               target="_blank"><img
+                                src="images/common/icon_tg.png" alt=""></a> <a
+                                href="https://www.reddit.com/u/YoloDoge_Coin/" target="_blank"><img
+                                src="images/common/icon_reddit.png" alt=""></a></li>
+                    </ul>
+                </div>
         </div>
     </div>
 
-<div class="index">
-    <div class="content platformWrap" id="Tokenomics" data-stellar-background-ratio="0.5">
-        <div class="inner">
-            <div class="platform">
-                <div class="title" data-scroll-reveal="enter left over 0.8s and move 100px after 0s">
-                    <h3>Contract Address</h3>
-					0x00000000000000000000000000000000000000001
-                </div>
-                <div class="main">
-
-                    <ul>
-                        <li class="box1" data-scroll-reveal="enter left over 0.8s and move 100px after 0.3s">
-                            <div class="tit">
-                                <span>15%</span> Fees
-                                <img src="images/platform/icon1.png" alt="">
-                            </div>
-                            <div class="con">
-                                5% redistribution to all holders.
-							<br>3% redistribution to holders who hold more than 24h<br>（if you have sell out，the timer will reset)
-							<br>5% will go back to the LiquidityPool (LP)
-                            <br>1% for lottery：10 holder will be randomly selected.
-                            <br>1% for marketing
-                            </div>
-                            <div class="img"><img src="images/platform/box1.png" alt=""></div>
-                        </li>
-                        <li class="box2" data-scroll-reveal="enter left over 0.8s and move 100px after 0s">
-                            <div class="tit">
-                                <span></span>30% Liquidity&Circulation
-                                <img src="images/platform/icon3.png" alt="">
-                            </div>
-                            <div class="con">
-                                15% of the total supply will be presaled<br>
-                            15% of the total supply will go into Liquidity Pool (LP)
-                            </div>
-                            <div class="img"><img src="images/platform/box2.png" alt=""></div>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li class="box3" data-scroll-reveal="enter right over 0.8s and move 100px after 0.3s">
-                            <div class="tit">
-                                Total Token Supply
-                                <img src="images/platform/icon2.png" alt="">
-                            </div>
-                            <div class="con">
-                                1,000,000,000,000,000
-						    <br>Black hole：60% of the total supply has been burnt from the master wallet
-							<br>Reserved for the team: 5% of the total supply that belong to the founder team has been locked until Yolo Doge grew by 20000% <img src="images/platform/rocket.png">
-                            </div>
-                            <div class="img"><img src="images/platform/box3.png" alt=""></div>
-                        </li>
-                        <li class="box4" data-scroll-reveal="enter right over 0.8s and move 100px after 0s">
-                            <div class="tit">
-                                <span></span>5% Future project spending
-                                <img src="images/platform/icon4.png" alt="">
-                            </div>
-                            <div class="con">
-                                5% of the total supply will be prepared for marketing and airdropped to initial supporters and random wallet holders in the World of Cryptocurrency.
-                            </div>
-                            <div class="img"><img src="images/platform/box4.png" alt=""></div>
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="content" id="About" data-stellar-background-ratio="0.5">
-        <div class="inner">
-            <div class="features">
-                <div class="left" data-scroll-reveal="enter left over 0.8s and move 100px after 0.8s"><img src="images/features/img.png" alt=""></div>
-                <div class="right">
-                    <div class="title" data-scroll-reveal="enter right over 0.8s and move 100px after 0s">
-                        <h3>About</h3>
+    <div class="index">
+        <div class="content platformWrap" id="Tokenomics" data-stellar-background-ratio="0.5">
+            <div class="inner">
+                <div class="platform">
+                    <div class="title" data-scroll-reveal="enter left over 0.8s and move 100px after 0s">
+                        <h3>Contract Address</h3>
+                        0xf86B9D7d2608D0B738B761F3f00541869B5D0A82
                     </div>
-                    <ul>
-                        <li data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.1s">
-                            <div class="tit">About Us</div>
-                            <img src="images/features/icon.png" alt="">
-                            <div class="con">YoloDoge is originated and launched by the core community of Wallstreetbets, a new cryptocurrency set to launch in JULY 2021, aims to be one of the fastest-growing coins in the world.</div>
-                        </li>
-                        <li data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.3s">
-                            <div class="tit">Origin</div>
-                            <img src="images/features/icon.png" alt="">
-                            <div class="con">At the beginning of 2021, in the GME event, retail investors overwhelmed all the Wall Street short sellers under the leadership of WallstreetBets. Therefore, we recruited professional promotion team, trading team and technical team to develop a new Yolo Doge mechanism.</div>
-                        </li>
-                        <li data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.5s">
-                            <div class="tit">Aim</div>
-                            <img src="images/features/icon.png" alt="">
-                            <div class="con">Since the Bitcoin created a gain of 85 million times, and it’s worth as much as $40,000, but the profits already no longer belong to investors but to those Wall Street vampires who constantly manipulating the Bitcoin‘s rise and fall, the investors have to lose money in stead of making money. In such a situation, we wanted to launch Yolo Doge, which is not only a meme coin, but also a cohesion for our community. We hoping to create another GME, and to make Yolo Doge Coin grow by at least 10,000 times.</div>
-                        </li>
-                    </ul>
+                    <div class="main">
+
+                        <ul>
+                            <li class="box1" data-scroll-reveal="enter left over 0.8s and move 100px after 0.3s">
+                                <div class="tit">
+                                    <span></span>15% TAX on every transaction
+                                    <img src="images/platform/icon1.png" alt="">
+                                </div>
+                                <div class="con">
+                                    5% redistribution to all holders.
+                                    <br>3% redistribution to holders who hold more than 24h（if you have sell out，the
+                                    timer will reset)
+                                    <br>5% will go back to the LiquidityPool (LP)
+                                    <br>1% for lottery：10 holder will be randomly selected.
+                                    <br>1% for marketing
+                                </div>
+                                <div class="img"><img src="images/platform/box1.png" alt=""></div>
+                            </li>
+                            <li class="box2" data-scroll-reveal="enter left over 0.8s and move 100px after 0s">
+                                <div class="tit">
+                                    <span></span>30% Liquidity & Circulation
+                                    <img src="images/platform/icon3.png" alt="">
+                                </div>
+                                <div class="con">
+                                    15% of the total supply will be presaled<br>
+                                    15% of the total supply will go into Liquidity Pool (LP)
+                                </div>
+                                <div class="img"><img src="images/platform/box2.png" alt=""></div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="box3" data-scroll-reveal="enter right over 0.8s and move 100px after 0.3s">
+                                <div class="tit">
+                                    Total Token Supply
+                                    <img src="images/platform/icon2.png" alt="">
+                                </div>
+                                <div class="con">
+                                    1,000,000,000,000,000
+                                    <br>Black hole：60% of the total supply has been burnt from the master wallet
+                                    <br>Reserved for the team: 5% of the total supply that belong to the founder team
+                                    has been locked until Yolo Doge grew by 20000% <img
+                                        src="images/platform/rocket.png">
+                                </div>
+                                <div class="img"><img src="images/platform/box3.png" alt=""></div>
+                            </li>
+                            <li class="box4" data-scroll-reveal="enter right over 0.8s and move 100px after 0s">
+                                <div class="tit">
+                                    <span></span>5% Future project spending
+                                    <img src="images/platform/icon4.png" alt="">
+                                </div>
+                                <div class="con">
+                                    5% of the total supply will be prepared for marketing and airdropped to initial
+                                    supporters and random wallet holders in the World of Cryptocurrency.
+                                </div>
+                                <div class="img"><img src="images/platform/box4.png" alt=""></div>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="content" id="About" data-stellar-background-ratio="0.5">
+            <div class="inner">
+                <div class="features">
+                    <div class="left" data-scroll-reveal="enter left over 0.8s and move 100px after 0.8s"><img
+                            src="images/features/img.png" alt=""></div>
+                    <div class="right">
+                        <div class="title" data-scroll-reveal="enter right over 0.8s and move 100px after 0s">
+                            <h3>About</h3>
+                        </div>
+                        <ul>
+                            <li data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.1s">
+                                <div class="tit">About Us</div>
+                                <img src="images/features/icon.png" alt="">
+                                <div class="con">YoloDoge is originated and launched by the core community of
+                                    Wallstreetbets,a new cryptocurrency set to launch in JULY 2021,aims to be one of the
+                                    fastest-growing coins in the world.
+                                </div>
+                            </li>
+                            <li data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.3s">
+                                <div class="tit">Origin</div>
+                                <img src="images/features/icon.png" alt="">
+                                <div class="con">At the beginning of 2021, in the GME event, retail investors overwhelmed all the Wall Street short sellers under the leadership of WallstreetBets. Therefore, we recruited professional promotion team, trading team and technical team to develop a new Yolo Doge mechanism.
+                                </div>
+                            </li>
+                            <li data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.5s">
+                                <div class="tit">Aim</div>
+                                <img src="images/features/icon.png" alt="">
+                                <div class="con">Since the Bitcoin created a gain of 85 million times, and it’s worth as much as $40,000, but the profits already no longer belong to investors but to those Wall Street vampires who constantly manipulating the Bitcoin‘s rise and fall, the investors have to lose money in stead of making money. In such a situation, we wanted to launch Yolo Doge, which is not only a meme coin, but also a cohesion for our community. We hoping to create another GME, and to make Yolo Doge Coin grow by at least 10,000 times.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <div class="inner">
+            <div class="subscribe">
+            </div>
+            <div class="media" data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.6s">
+                <ul>
+                    <li><a href="https://twitter.com/yolodoge_coin/" target="_blank"><img
+                            src="images/common/icon_tw.png" alt=""></a></li>
+                    <li><a href="https://t.me/YoloDogeCoin" target="_blank"><img src="images/common/icon_tg.png" alt=""></a>
+                    </li>
+                    <li><a href="https://www.reddit.com/u/YoloDoge_Coin/" target="_blank"><img
+                            src="images/common/icon_reddit.png" alt=""></a></li>
+                </ul>
             </div>
         </div>
     </div>
 
-</div>
 
-
-
-<div class="footer">
-    <div class="inner">
-        <div class="subscribe">
-        </div>
-        <div class="media" data-scroll-reveal="enter bottom over 0.8s and move 100px after 0.6s">
-            <ul>
-                <li><a href="https://twitter.com/yolodoge_coin/" target="_blank"><img src="images/common/icon_tw.png" alt=""></a></li>
-                <li><a href="https://t.me/YoloDogeCoin" target="_blank"><img src="images/common/icon_tg.png" alt=""></a></li>
-			    <li><a href="https://www.reddit.com/u/YoloDoge_Coin/" target="_blank"><img src="images/common/icon_reddit.png" alt=""></a></li>
-				<li><a href="https://0.plus/YoloDogeCoin" target="_blank"><img src="images/common/icon_btok.png" alt=""></a></li>
+    <div class="slide-mask"></div>
+    <aside class="slide-wrapper">
+        <div>
+            <ul class="menu">
+                <br>
+                <br>
+                <br>
+                <li class="toplink"><a href="#Tokenomics">Tokenomics</a></li>
+                <li class="toplink"><a href="#About">About</a></li>
+                <li><a href="https://www.dextools.io/app/pancakeswap/pair-explorer/0xf86B9D7d2608D0B738B761F3f00541869B5D0A82">Chart</a></li>
+                <li><a href="file/whitepaper.pdf" target="_blank">Whitepaper</a></li>
+                <li><a href="file/audit.pdf" target="_blank">Audit</a></li>
             </ul>
         </div>
-    </div>
-</div>
+    </aside>
 
+    <a href="javascript:;" id="goBack">Up</a>
 
-<div class="slide-mask"></div>
-<aside class="slide-wrapper">
-    <div>
-        <ul class="menu">
-			<br>
-			<br>
-			<br>
-            <li class="toplink"><a href="#Tokenomics">Tokenomics</a></li>
-            <li class="toplink"><a href="#About">About</a></li>
-            <li><a href="https://www.dextools.io/app/pancakeswap/pair-explorer/">Chart</a></li>
-			<li><a href="file/whitepaper.pdf" target="_blank">Whitepaper</a></li>
-            <li><a href="file/audit.pdf" target="_blank">Audit</a></li>
-        </ul>
-    </div>
-</aside>
-
-<a href="javascript:;" id="goBack">Up</a>
-
-<div class="PopUp" id="PopUpWeChat">
-    <div class="PopUpMain">
-        <a href="javascript:;" class="closeBtn"></a>
-        <div class="wechat">
-            <img src="images/wechart.png" alt="">
+    <div class="PopUp" id="PopUpWeChat">
+        <div class="PopUpMain">
+            <a href="javascript:;" class="closeBtn"></a>
+            <div class="wechat">
+                <img src="images/wechart.png" alt="">
+            </div>
         </div>
     </div>
-</div>
 
-<audio id="player" class="playsong"><source src="mp3/1.mp3" /></audio>
+    <audio id="player" class="playsong">
+        <source src="mp3/1.mp3"/>
+    </audio>
 
-<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
-<script src="js/scrollReveal.js"></script>
-<script src="js/jquery.stellar.min.js"></script>
-<script src="js/swiper/swiper.min.js" type="text/javascript"></script>
-<script src="js/common.js" type="text/javascript"></script>
-<script src="js/vidbg.js" type="text/javascript"></script>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/scrollReveal.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/swiper/swiper.min.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <script src="js/vidbg.js" type="text/javascript"></script>
+    <script src="https://act.mcake.com/fangli/2018/wap/commonjs/jquery.min.js"></script>
+    <script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
 
-<script>
-    var swiper = new Swiper('.teamList .swiper-container', {
-        slidesPerView: 'auto',
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-    });
-</script>
-<script>
-    $(document).ready(function() {
-
-        var status=0;
-        var x = document.getElementById("player");
-        $('#playBtn').on('click',function(){
-            if (status > 0) {
-                x.pause();
-                status = 0;
-                $(this).find('img').attr('src','images/banner/btn.png')
-            } else {
-                x.play();
-                status = 1;
-                $(this).find('img').attr('src','images/banner/btn_play.png')
-            }
-        })
-
-        $('.section-second').vidbg({
-            'mp4': 'media/video.mp4',
-            'poster': 'media/video.jpg',
-        }, {
-            muted: true,
-            loop: true,
-            overlay: true,
+    <script>
+        var swiper = new Swiper('.teamList .swiper-container', {
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
         });
+    </script>
+    <script>
+        $(document).ready(function () {
 
-    });
-</script>
+            var status = 0;
+            var x = document.getElementById("player");
+            $('#playBtn').on('click', function () {
+                if (status > 0) {
+                    x.pause();
+                    status = 0;
+                    $(this).find('img').attr('src', 'images/banner/btn.png')
+                } else {
+                    x.play();
+                    status = 1;
+                    $(this).find('img').attr('src', 'images/banner/btn_play.png')
+                }
+            })
+            var video = document.getElementById("shakeVideo");
+            video.play();
+            document.addEventListener('WeixinJSBridgeReady', function () {
+                video.play();
+            }, false);
+        });
+    </script>
 </body>
 </html>
